@@ -1,10 +1,24 @@
 # Credentials & Secrets
 web-backend/counsconnect-ec0c3-firebase-adminsdk-fbsvc-2a2f285b22.json
-*.key
-*.pem
+*.env
+*.env.*
 .env
 .env.local
 .env.*.local
+.env.*.js
+*.pem
+*.key
+*.pub
+config.local.js
+secrets.json
+
+# Database & API Keys
+mongodb+srv://
+mongodb://
+DATABASE_URL
+API_KEY
+PRIVATE_KEY
+SECRET_KEY
 
 # Dependencies
 node_modules/
@@ -15,12 +29,15 @@ node_modules/
 # Build outputs
 /build/
 *.go.sum
+dist/
+build/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+.env.development.local
 
 # Logs
 *.log

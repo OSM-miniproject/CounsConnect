@@ -47,11 +47,11 @@ func LoadConfig() (*Config, error) {
             WriteTimeout: time.Duration(writeTimeout) * time.Second,
         },
         MongoDB: MongoDBConfig{
-            URI:      getEnv("MONGODB_URI", "mongodb+srv://kulkarniom7057:BwblKbFIJ6R8Uut3@counsconnect.escoesk.mongodb.net"),
+            URI:      getEnv("MONGODB_URI", ""),
             Database: getEnv("MONGODB_DATABASE", "CounsConnect"),
         },
         JWT: JWTConfig{
-            Secret:    getEnv("JWT_SECRET", "your-secret-key"),
+            Secret:    getEnv("JWT_SECRET", ""),
             ExpiresIn: time.Duration(jwtExpiresIn) * time.Hour,
         },
     }, nil
