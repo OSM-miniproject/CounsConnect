@@ -1,0 +1,29 @@
+# Credentials & Secrets
+web-backend/counsconnect-ec0c3-firebase-adminsdk-fbsvc-2a2f285b22.json
+*.key
+*.pem
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+/dist/
+/.next/
+.DS_Store
+
+# Build outputs
+/build/
+*.go.sum
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
